@@ -1,10 +1,12 @@
 package occam.selenium;
+import org.testng.annotations.Test;
 
-public class SeleniumWebDriver {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+public class TestNG{
+	
+	@Test
+	public void OpenBrowser(){
+		System.out.println("TestNG");
 	}
+	
 
 }
