@@ -1,16 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33" started-at="2017-10-18T06:38:05Z" finished-at="2017-10-18T06:38:05Z">
+  <suite name="Default suite" duration-ms="71" started-at="2017-10-18T07:09:56Z" finished-at="2017-10-18T07:09:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33" started-at="2017-10-18T06:38:05Z" finished-at="2017-10-18T06:38:05Z">
+    <test name="Default test" duration-ms="71" started-at="2017-10-18T07:09:56Z" finished-at="2017-10-18T07:09:57Z">
       <class name="occam.selenium.TestNG">
-        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:occam.selenium.TestNG@7921b0a2]" name="OpenBrowser" duration-ms="0" started-at="2017-10-17T23:38:05Z" finished-at="2017-10-17T23:38:05Z">
+        <test-method status="PASS" signature="BeforeTesting()[pri:0, instance:occam.selenium.TestNG@548b7f67]" name="BeforeTesting" is-config="true" duration-ms="0" started-at="2017-10-18T00:09:56Z" finished-at="2017-10-18T00:09:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenBrowser -->
+        </test-method> <!-- BeforeTesting -->
+        <test-method status="PASS" signature="TestNumber2()[pri:0, instance:occam.selenium.TestNG@548b7f67]" name="TestNumber2" duration-ms="17" started-at="2017-10-18T00:09:56Z" finished-at="2017-10-18T00:09:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestNumber2 -->
+        <test-method status="PASS" signature="TestNumber1()[pri:0, instance:occam.selenium.TestNG@548b7f67]" name="TestNumber1" duration-ms="0" started-at="2017-10-18T00:09:56Z" finished-at="2017-10-18T00:09:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestNumber1 -->
+        <test-method status="PASS" signature="RunningBeforeTest()[pri:0, instance:occam.selenium.TestNG@548b7f67]" name="RunningBeforeTest" is-config="true" duration-ms="0" started-at="2017-10-18T00:09:56Z" finished-at="2017-10-18T00:09:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RunningBeforeTest -->
+        <test-method status="PASS" signature="RunningBeforeTest()[pri:0, instance:occam.selenium.TestNG@548b7f67]" name="RunningBeforeTest" is-config="true" duration-ms="0" started-at="2017-10-18T00:09:56Z" finished-at="2017-10-18T00:09:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RunningBeforeTest -->
+        <test-method status="PASS" signature="TestNumber5()[pri:0, instance:occam.selenium.TestNG@548b7f67]" name="TestNumber5" duration-ms="0" started-at="2017-10-18T00:09:57Z" finished-at="2017-10-18T00:09:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestNumber5 -->
+        <test-method status="PASS" signature="RunningBeforeTest()[pri:0, instance:occam.selenium.TestNG@548b7f67]" name="RunningBeforeTest" is-config="true" duration-ms="0" started-at="2017-10-18T00:09:57Z" finished-at="2017-10-18T00:09:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RunningBeforeTest -->
+        <test-method status="PASS" signature="TestNumber4()[pri:0, instance:occam.selenium.TestNG@548b7f67]" name="TestNumber4" duration-ms="0" started-at="2017-10-18T00:09:57Z" finished-at="2017-10-18T00:09:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestNumber4 -->
+        <test-method status="PASS" signature="RunningBeforeTest()[pri:0, instance:occam.selenium.TestNG@548b7f67]" name="RunningBeforeTest" is-config="true" duration-ms="0" started-at="2017-10-18T00:09:57Z" finished-at="2017-10-18T00:09:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RunningBeforeTest -->
+        <test-method status="PASS" signature="RunningBeforeTest()[pri:0, instance:occam.selenium.TestNG@548b7f67]" name="RunningBeforeTest" is-config="true" duration-ms="0" started-at="2017-10-18T00:09:57Z" finished-at="2017-10-18T00:09:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RunningBeforeTest -->
+        <test-method status="PASS" signature="TestNumber3()[pri:0, instance:occam.selenium.TestNG@548b7f67]" name="TestNumber3" duration-ms="0" started-at="2017-10-18T00:09:57Z" finished-at="2017-10-18T00:09:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestNumber3 -->
+        <test-method status="PASS" signature="AfterTesting()[pri:0, instance:occam.selenium.TestNG@548b7f67]" name="AfterTesting" is-config="true" duration-ms="1" started-at="2017-10-18T00:09:57Z" finished-at="2017-10-18T00:09:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTesting -->
       </class> <!-- occam.selenium.TestNG -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
