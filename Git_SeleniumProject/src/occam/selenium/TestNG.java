@@ -1,4 +1,5 @@
 package occam.selenium;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
@@ -10,6 +11,11 @@ public class TestNG{
 	public void RunningBeforeTest(){
 		System.out.println("@BeforeMethod Delete cookies before each test");
 	}
+	@AfterMethod
+	public void RunningAfterMethod(){
+		System.out.println("@AfterMethod Delete cookies after each test");
+	}
+	
 	@BeforeTest
 	public void BeforeTesting(){
 		System.out.println("@BeforeTest Delete cookies before starting test");
