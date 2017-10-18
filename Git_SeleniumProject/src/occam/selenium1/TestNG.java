@@ -1,4 +1,4 @@
-package occam.selenium;
+package occam.selenium1;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
