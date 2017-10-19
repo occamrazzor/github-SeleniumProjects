@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Automation Test">
+    <test name = "SmokeTest">
+        <parameter name="useridtest" value="Testing123"/>
+        <classes>
+            
+            <class name="occam.datadriven.Parameterized"/>
+            
+            
+        </classes>
+        
+    </test>
+    
+    
+    
+</suite>

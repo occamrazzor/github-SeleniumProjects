@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Automation_Test">
-                    <span>C:\Users\Aviator\git\SeleniumProject\Git_SeleniumProject\TestNGgroups.xml</span>
+                    <span>C:\Users\Aviator\git\SeleniumProject\Git_SeleniumProject\src\occam\datadriven\parametertest.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">0 methods,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Automation_Test" class="hide-methods passed suite-Automation_Test"> (hide)</a> <!-- hide-methods passed suite-Automation_Test -->
+                      <a href="#" panel-name="suite-Automation_Test" class="show-methods passed suite-Automation_Test"> (show)</a> <!-- show-methods passed suite-Automation_Test -->
+                    </span>
+                    <div class="method-list-content passed suite-Automation_Test">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Test" title="occam.datadriven.Parameterized" hash-for-method="testingparameter(Testing123)">testingparameter(Testing123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Automation_Test -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -103,23 +117,38 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Automation_Test" class="panel Automation_Test">
+          <div class="suite-Automation_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">occam.datadriven.Parameterized</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testingparameter(Testing123)">
+                  </a> <!-- testingparameter(Testing123) -->
+                  <span class="method-name">testingparameter</span>
+                  <span class="parameters">(Testing123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Test-class-passed -->
         </div> <!-- panel Automation_Test -->
         <div panel-name="test-xml-Automation_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Aviator\git\SeleniumProject\Git_SeleniumProject\TestNGgroups.xml</span>
+            <span class="header-content">C:\Users\Aviator\git\SeleniumProject\Git_SeleniumProject\src\occam\datadriven\parametertest.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Automation Test&quot;&gt;
-  &lt;test name=&quot;Smoke Testcases&quot;&gt;
-    &lt;groups&gt;
-      &lt;run&gt;
-        &lt;include name=&quot;Priority1&quot;/&gt;
-      &lt;/run&gt;
-    &lt;/groups&gt;
-  &lt;/test&gt; &lt;!-- Smoke Testcases --&gt;
+  &lt;test name=&quot;SmokeTest&quot;&gt;
+    &lt;parameter name=&quot;useridtest&quot; value=&quot;Testing123&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;occam.datadriven.Parameterized&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SmokeTest --&gt;
 &lt;/suite&gt; &lt;!-- Automation Test --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -131,7 +160,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Smoke Testcases (0 classes)</span>
+                <span class="test-name">SmokeTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -157,11 +186,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(0);
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testingparameter')
+data.setCell(0, 2, 'occam.datadriven.Parameterized')
+data.setCell(0, 3, 10);
 window.suiteTableData['Automation_Test']= { tableData: data, tableDiv: 'times-div-Automation_Test'}
 return data;
 }
               </script>
+              <span class="suite-total-time">Total running time: 10 ms</span>
               <div id="times-div-Automation_Test">
               </div> <!-- times-div-Automation_Test -->
             </div> <!-- times-div -->
@@ -186,6 +220,12 @@ return data;
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">occam.datadriven.Parameterized</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testingparameter(Testing123)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

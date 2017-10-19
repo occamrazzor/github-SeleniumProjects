@@ -29,25 +29,38 @@ public class Annotations {
 	}
 	
 	//@Test(enabled=false) will exclude the test from executing.
-		@Test(enabled=false)
+	@Test(enabled=false)
 		public void PrintInvoice(){
 			System.out.println("Executing Test# 5");
 	}
 		
-	@Test(groups ={"Priority1"}, dataProvider = "getData")
-	public void UserId(String username, String password){
-		System.out.println("The username is " + username + "and password is" + password);
+	@Test(groups ={"Priority1"}, dataProvider="getData")
+	public void ParameterizedData(String username, String password, String id){
+		System.out.println("The username is " + username + "and password is " + password + " " + id);
 	}
 		
-		
+	//Parameterizing data	
 	//@DataProvider parameterize the input for the test listed above.	
 	@DataProvider
-	public static Object[][] getData(){
+	public Object[][] getData(){
 		// i stands for number of times test should run
 		// j stands for no# of parameters it should send for one go...
 		
-		return new Object[][]
-		{{"testuser_1", "Test@1"}, {"testuser_2", "Test@2"}};
+		Object[][] data= new Object[3][3];
+		data[0][0] = "1_username";
+		data[0][1] = "1_password";
+		data[0][2] = "1_id";
+		
+		data[1][0] = "2_username";
+		data[1][1] = "2_password";
+		data[1][2] = "2_id";
+		
+		data[2][0] = "3_username";
+		data[2][1] = "3_password";
+		data[2][2] = "3_id";
+		
+		return data;
+		
 		
 		
 	}

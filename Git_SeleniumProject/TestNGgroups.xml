@@ -3,8 +3,7 @@
 	<test name="Smoke Testcases">
 	     <classes>
 	        
-	     
-	         <class name= "occam.datadriven.Annotations" />   
+	              <class name= "occam.datadriven.Annotations" />   
 	    </classes>
 	    <groups>
 	        <run>
